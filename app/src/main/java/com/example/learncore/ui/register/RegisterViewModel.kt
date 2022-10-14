@@ -1,6 +1,7 @@
 package com.example.learncore.ui.register
 
 import androidx.lifecycle.viewModelScope
+import com.crocodic.core.api.ApiCode
 import com.crocodic.core.api.ApiObserver
 import com.crocodic.core.api.ApiResponse
 import com.crocodic.core.data.CoreSession
@@ -10,6 +11,7 @@ import com.example.learncore.data.const.Const
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import org.json.JSONObject
+import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel

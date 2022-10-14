@@ -19,7 +19,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(R.layout.a
         Handler(Looper.getMainLooper()).postDelayed({
             val isLogin = session.getBoolean(Const.ISLOGIN.SAVE_LOGIN)
             if (isLogin) {
-//                openActivity<HomeActivity>()
+                openActivity<LoginActivity>()
 //                overridePendingTransition(R.anim.transition_from_bottom, R.anim.transition_to_top)
                 finish()
             } else {

@@ -35,8 +35,15 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding,RegisterViewModel>
                                 loadingDialog.dismiss()
                                 tos("${it.data}")
                             }
+
+                            ApiStatus.ERROR -> {
+                                loadingDialog.dismiss()
+                                tos("${it.message}")
+                            }
+
                             else -> {
                                 loadingDialog.dismiss()
+                                tos("Opps! Error")
                             }
                         }
                     }
